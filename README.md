@@ -28,6 +28,7 @@ curl -s http://awesomequotesapi.com/shout/steve-jobs?limit=2
 
 ## Constraints 
 - Count N provided MUST be equal or less than 10. If not, our API should return an error.
+- Any framework is allowed but Laravel
 
 ## What will we evaluate?
 * **Design**: We know this is a very simple application but we want to see how you design code. We value having a clear application architecture, that helps maintain it (and make changes requested by the product owner) for years.
