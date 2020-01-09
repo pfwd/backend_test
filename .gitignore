@@ -1,6 +1,7 @@
 .idea
 bin/*
 !bin/.gitignore
+!bin/console
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
