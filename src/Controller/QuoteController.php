@@ -30,7 +30,7 @@ class QuoteController extends AbstractController
      * @return Response
      *
      */
-    public function index(Request $request): Response
+    public function shout(Request $request): Response
     {
         $name = $request->get('name');
         $limit = (int)$request->query->get('limit');
