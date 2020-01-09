@@ -1,6 +1,70 @@
 # iPresence Tech Test 
 
+---
+## Install
 
+### Requirements
+
+- PHP 7.4.1
+- Symfony CLI
+
+### Installation guide
+
+1. Clone the repo
+
+```bash
+$ git clone git@github.com:pfwd/backend_test.git
+```
+
+2. Install the packages
+
+```bash
+$ cd backend_test
+$ composer install
+```
+## Launch
+```bash
+$ symfony server:start
+$ open http://127.0.0.1:8000/shout/steve-jobs?limit=1
+```
+
+## Static Analysis
+
+To run PHPStan
+```bash
+$ bin/phpstan analyse
+``` 
+Level 7 will be used!
+
+## Tests
+
+To run all the tests _Requires the Symfony local server running. [See Launch](#launch)_
+
+```bash
+$ bin/codecept run
+``` 
+
+To run unit tests
+
+```bash
+$ bin/codecept run unit
+``` 
+
+To run acceptance tests
+
+```bash
+$ bin/codecept run acceptance
+``` 
+
+To run API tests _Requires the Symfony local server running. [See Launch](#launch)_
+
+```bash
+$ bin/codecept run api
+``` 
+
+---
+
+## Brief
 
 We want you to implement a REST API that, given a famous person and a count N, returns N quotes from this famous person _shouted_ .
 
